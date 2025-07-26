@@ -46,29 +46,13 @@ export const StarField = () => {
     // Create star elements
     stars.forEach((star, index) => {
       const starElement = document.createElement('div');
-      // Enhanced star movement and shooting stars
+      // Subtle drift animations - only some stars drift slowly
       let movingClass = '';
-      const rand = Math.random();
-      const shootingRand = Math.random();
+      const driftRand = Math.random();
       
-      // Shooting stars (separate random check to fix the bug)
-      if (shootingRand > 0.85) { // 15% chance for shooting stars
-        const shootingType = Math.floor(Math.random() * 3);
-        switch (shootingType) {
-          case 0:
-            movingClass = ' shooting-star';
-            break;
-          case 1:
-            movingClass = ' shooting-star shooting-star-diagonal';
-            break;
-          case 2:
-            movingClass = ' shooting-star shooting-star-vertical';
-            break;
-        }
-      } 
-      // Regular moving stars
-      else if (rand > 0.4) { // 60% chance for moving stars
-        movingClass = ` moving-star moving-star-${Math.floor(Math.random() * 6) + 1}`;
+      // Only 35% of stars have subtle drift movement
+      if (driftRand > 0.65) {
+        movingClass = ` drift-star drift-star-${Math.floor(Math.random() * 4) + 1}`;
       }
       
       starElement.className = `star ${star.isRed ? 'red-star' : ''}${movingClass}`;
