@@ -66,7 +66,7 @@ export const Navigation = () => {
                   }
                 `}
               >
-               <Icon className={`w-4 h-4 transition-transform duration-300 ${isActive ? 'animate-[gentle-bounce_2s_ease-in-out_infinite]' : 'hover:scale-110'}`} />
+               <Icon className={`w-4 h-4 transition-transform duration-300 ${isActive ? 'animate-[gentle-bounce_4s_ease-in-out_infinite]' : 'hover:scale-110'}`} />
                <div className={`text-[10px] font-semibold text-center transition-all duration-300 ${isActive ? 'font-bold' : 'hover:font-semibold'} leading-tight`}>
                  {Array.isArray(item.label) ? (
                    item.label.map((line, index) => (

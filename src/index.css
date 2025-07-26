@@ -396,7 +396,13 @@
     100% { left: 100%; }
   }
 
-  /* Floating Animation for Xin AI text */
+  /* Gentle bounce animation for navigation icons */
+  @keyframes gentle-bounce {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-3px); }
+  }
+
+  /* Floating Animation for Xin AI text - no glow */
   @keyframes float-gentle {
     0%, 100% { transform: translateY(0px) rotate(0deg); }
     33% { transform: translateY(-2px) rotate(0.5deg); }
@@ -404,7 +410,7 @@
   }
 
   .animate-float-gentle {
-    animation: float-gentle 3s ease-in-out infinite;
+    animation: float-gentle 4s ease-in-out infinite;
   }
 
   /* Enhanced particle effects */
