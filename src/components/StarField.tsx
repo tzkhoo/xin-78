@@ -59,6 +59,11 @@ export const StarField = () => {
       starElement.style.left = `${star.x}%`;
       starElement.style.top = `${star.y}%`;
       starElement.style.animationDelay = `${star.delay}s`;
+      
+      // Apply drift animation if present, while preserving twinkle
+      if (movingClass) {
+        starElement.style.animation = `twinkle 3s infinite ${star.delay}s, ${movingClass.trim().split(' ')[1]} var(--drift-duration) linear infinite alternate`;
+      }
       container.appendChild(starElement);
     });
 

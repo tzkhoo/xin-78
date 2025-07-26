@@ -100,7 +100,7 @@ const Index = () => {
         {/* Header - Mobile First */}
         <div className="text-center mb-4 animate-fade-in">
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-2">
-            <span className="text-white animate-[float-text-xin_4s_ease-in-out_infinite]">Xin</span>
+            <span className="text-white animate-float-gentle">Xin</span>
             <span className="text-transparent bg-gradient-to-r from-primary via-primary-glow to-primary bg-clip-text ml-1 animate-[float-text-ai_3.5s_ease-in-out_infinite] [animation-delay:0.5s]">AI</span>
           </h1>
           

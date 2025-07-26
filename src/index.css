@@ -505,10 +505,10 @@
     animation-timing-function: linear;
   }
   
-  .drift-star-1 { animation-name: subtle-drift-1; animation-duration: 80s; }
-  .drift-star-2 { animation-name: subtle-drift-2; animation-duration: 100s; }
-  .drift-star-3 { animation-name: subtle-drift-3; animation-duration: 75s; }
-  .drift-star-4 { animation-name: subtle-drift-4; animation-duration: 90s; }
+  .drift-star-1 { --drift-duration: 80s; animation-name: subtle-drift-1; }
+  .drift-star-2 { --drift-duration: 100s; animation-name: subtle-drift-2; }
+  .drift-star-3 { --drift-duration: 75s; animation-name: subtle-drift-3; }
+  .drift-star-4 { --drift-duration: 90s; animation-name: subtle-drift-4; }
 
 
   /* Input box particles for advanced mode */
